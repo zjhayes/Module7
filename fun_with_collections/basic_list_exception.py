@@ -5,7 +5,10 @@ def make_list():
     list_size = 3
     list = []
     for i in range(list_size):
-        list.insert(i, int(get_input()))
+        user_input = int(get_input())
+        if user_input <= 0 or user_input > 100:
+            raise ValueError
+        list.insert(i, user_input)
     return list
 
 
