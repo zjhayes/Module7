@@ -8,6 +8,10 @@ class TestSortAndSearch(unittest.TestCase):
         the_list = [2,4,6]
         self.assertEqual(topic1.search_list(the_list, 4), 1)
 
+    def test_failed_search(self):
+        the_list = [2,4,6]
+        self.assertEqual(topic1.search_list(the_list, 8), -1)
+
 
 if __name__ == '__main__':
     unittest.main()
