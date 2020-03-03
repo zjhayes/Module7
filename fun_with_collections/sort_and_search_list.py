@@ -5,7 +5,9 @@ import fun_with_collections.basic_list_exception as topic1
 
 def sort_list():
     list_to_sort = topic1.make_list()
-    list_to_sort.sort()         # Did not include return statement because lists are passed by reference.
+    list_to_sort.sort()
+    return list_to_sort
+    # Even though list is passed by reference, I had to return it to use it in my test since the input was mocked.
 
 
 def search_list(item):

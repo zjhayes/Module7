@@ -13,8 +13,8 @@ class TestSortAndSearchArray(unittest.TestCase):
         self.assertEqual(topic1.search_array(the_array, 8), -1)
 
     def test_sort(self):
-        the_array = arr.array('d', [2, 4, 6])
-        topic1.sort_array()
+        the_array = arr.array('d', [3, 1, 2])
+        topic1.sort_array(the_array)
         self.assertEqual(the_array, [1, 2, 3])
 
 
